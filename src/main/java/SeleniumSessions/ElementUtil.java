@@ -133,7 +133,7 @@ public class ElementUtil{
 	}
 	
 	public void getPageLinksText(By locator, int timeOut){
-		visibilityOfAllElements(locator, timeOut).stream().forEach(ele -> System.out.println(ele.getText()));
+		//visibilityOfAllElements(locator, timeOut).stream().forEach(ele -> System.out.println(ele.getText()));
 	}
 	
 	public WebElement waitForElementToBeLocated(By locator, int timeOut){

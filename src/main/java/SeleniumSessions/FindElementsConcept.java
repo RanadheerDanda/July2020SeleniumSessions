@@ -45,7 +45,7 @@ public class FindElementsConcept {
 //		}
 		
 		//streams:
-		linksList.stream().forEach(ele -> System.out.println(ele.getText()));
+		//linksList.stream().forEach(ele -> System.out.println(ele.getText()));
 		
 		
 	}

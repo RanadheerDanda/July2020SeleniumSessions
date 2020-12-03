@@ -33,7 +33,7 @@ public class VisibilityOfElements {
 //		
 //		footerLinksList.stream().forEach(ele -> System.out.println(ele.getText()));
 		
-		System.out.println(getPageLinksText(footerLinks, 10));
+		//System.out.println(getPageLinksText(footerLinks, 10));
 	}
 	
 	public static List<WebElement> visibilityOfAllElements(By locator, int timeOut){
@@ -41,11 +41,13 @@ public class VisibilityOfElements {
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 	
-	public static List<String> getPageLinksText(By locator, int timeOut){
-		//visibilityOfAllElements(locator, timeOut).stream().forEach(ele -> System.out.println(ele.getText()));
-		 return visibilityOfAllElements(locator, timeOut).
-		stream().filter(ele -> !ele.getText().contains(" ")).map(ele -> ele.getText()).collect(Collectors.toList());
-	}
+	/*
+	 * public static List<String> getPageLinksText(By locator, int timeOut){
+	 * //visibilityOfAllElements(locator, timeOut).stream().forEach(ele ->
+	 * System.out.println(ele.getText())); return visibilityOfAllElements(locator,
+	 * timeOut). stream().filter(ele -> !ele.getText().contains(" ")).map(ele ->
+	 * ele.getText()).collect(Collectors.toList()); }
+	 */
 	
 
 }
